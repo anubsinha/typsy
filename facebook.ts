@@ -1,21 +1,21 @@
 export class Likes {
-    constructor(private _numLikes: number, private _toggleState: boolean) {
+    constructor(private _count: number, private _isLiked: boolean) {
     }
 
     get numLikes() {
-        return this._numLikes;
+        return this._count;
     }
 
     get toggleState() {
-        return this._toggleState;
+        return this._isLiked;
     }
 
     toggle() {
 
-        this._numLikes += this.toggleState ? -1 : 1;
-        this._toggleState = !this._toggleState;
-        console.log('likes = ' + this._numLikes);
-        console.log('toggle state = ' + this._toggleState);
+        this._count += this._isLiked ? -1 : 1;
+        this._isLiked = !this._isLiked;
+        console.log('likes = ' + this._count);
+        console.log('toggle state = ' + this._isLiked);
     }
 
 }
