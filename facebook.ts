@@ -14,8 +14,6 @@ export class Likes {
 
         this._count += this._isLiked ? -1 : 1;
         this._isLiked = !this._isLiked;
-        console.log('likes = ' + this.count);
-        console.log('toggle state = ' + this.isLiked);
     }
 
 }
