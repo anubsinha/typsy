@@ -1,22 +1,22 @@
 
 export class Point {
-  
-    constructor(private _x?:number, private _y?:number){
-     
+
+    constructor(private _x?: number, private _y?: number) {
+
     }
-    draw(){
+    draw() {
         //...
-        console.log(this._x +','+ this._y)
+        console.log(this._x + ',' + this._y)
     }
-    getDistance(){
+    getDistance() {
         //...
     }
 
-    get x(){
+    get x() {
         return this._x;
     }
 
-    set x(value){
-        this._x=value
+    set x(value) {
+        this._x = value
     }
 }
